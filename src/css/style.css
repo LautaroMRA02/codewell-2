@@ -1,0 +1,20 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+body 
+{
+	font-family:'Poppins', sans-serif; 	
+	font-weight: 300;
+}
+
+:root
+{
+    --main-bg-color1: white;
+    --main-color2: rgb(251,248,243);
+    --btn-link-color: rgb(77,19,209);
+}
+
