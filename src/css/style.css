@@ -2,19 +2,78 @@
 {
     padding: 0;
     margin: 0;
-    font-size: 1rem;
-    box-sizing: border-box;
+        box-sizing: border-box;
+    list-style: none;
+    direction: none;
+    outline: none;
 }
+a
+{  
+    list-style: none;
+    direction: none;
+    outline: none;
+    color: black;
+    text-decoration: none;
+}
+
+
 body 
 {
 	font-family:'Poppins', sans-serif; 	
-	font-weight: 300;
+	font-weight: 300;background-color: var(--main-color2);
 }
 
 :root
 {
-    --main-bg-color1: white;
-    --main-color2: rgb(251,248,243);
+    --main-bg-color: white;
+    --main-color2: rgb(251,238,243);
     --btn-link-color: rgb(77,19,209);
 }
 
+.menu{
+    background-color: var(--main-color2);
+
+}
+.menu__container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-left:32px;
+    margin-right: 32px;
+
+    font-size: 1.2rem;
+
+}
+.menu__logo{
+    font-weight: 600;
+
+}
+
+.menu__links
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 24px;
+}
+/* body > div.container > nav > section > ul > li:nth-child(5) > a */
+.menu__links> li:last-child > a
+{
+    background-color: var(--btn-link-color);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.menu__links> li:nth-child(4) > a
+{
+    font-weight: 600;
+   
+}
+
+.menu__links> li:nth-child(3) > a
+{
+    margin-right: 50px;
+   
+}
