@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *
 {
     padding: 0;
@@ -6,6 +8,8 @@
     list-style: none;
     direction: none;
     outline: none;
+	font-family:'Poppins', sans-serif; 	
+
 }
 a
 {  
@@ -16,64 +20,236 @@ a
     text-decoration: none;
 }
 
-
-body 
-{
-	font-family:'Poppins', sans-serif; 	
-	font-weight: 300;background-color: var(--main-color2);
-}
-
 :root
 {
     --main-bg-color: white;
-    --main-color2: rgb(251,238,243);
+    --main-color2: rgb(240, 234, 236);
     --btn-link-color: rgb(77,19,209);
 }
 
-.menu{
+
+body 
+{
+   
+}
+
+header
+{
     background-color: var(--main-color2);
 
 }
-.menu__container{
+header>.section__menus
+{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    margin-top: 32px;
-    margin-left:32px;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .menu__menus
+{
+    display: flex;
+    flex-flow: row nowrap;
+} */
+header>.section__menus > nav > ol
+{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+}
+.menu__menus> div 
+{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
     margin-right: 32px;
 
-    font-size: 1.2rem;
 
 }
-.menu__logo{
+
+
+.menu__contenido
+{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.contenido__imagen > img {
+    width: 50%;
+}
+
+main
+{
+    margin: 64px;
+}
+.main_features2
+{
+    display: flex;
+    margin-top: 64px;
+
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.main_features2 section {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+}
+
+.main_features2 section>img
+{
+    width: 48px;
+}
+.main_features2 section>span
+{
+    font-size: 1.3rem;
+    font-weight:bold ;
+}
+
+
+
+
+
+.main__feature3
+{
+    display: flex;
+    min-height: 50%;
+    margin-top: 64px;
+    background-color: var(--btn-link-color);
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-left: 32px;
+    padding-right: 32px;
+
+}
+.main__feature3>div>img{
+    width: 100%;
+}
+.contenido__imagen{
+    width:  50%;
+}
+.feature3__imagen{
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+}
+.contenido__imagen>img{
+    width: 100%;
+}
+
+.feature3__contenido
+{
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    height: 600px;
+    width: 50%;
+    margin-left: 16px;
+    justify-content: center;
+    gap: 2.5rem;
+
+
+}
+.feature3__contenido span
+{
+    font-size: 2.5rem;
     font-weight: 600;
+}
+.feature3__contenido p
+{
+    font-size: 1.2rem;
+    font-weight: 300;
 
 }
+.feature3__buttom a
+{
+    background-color: white;
+    color: var(--btn-link-color);
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
 
-.menu__links
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu__testimonios
+{
+    margin-top: 64px;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+}
+.menu__testimonios>div
+{
+    border: gainsboro 2px solid;
+    padding: 32px;
+    border-radius: 4px;
+}
+
+
+
+.menu__testimonios>div>div
 {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    gap: 24px;
-}
-/* body > div.container > nav > section > ul > li:nth-child(5) > a */
-.menu__links> li:last-child > a
-{
-    background-color: var(--btn-link-color);
-    color: white;
-    padding: 20px 30px;
-    border-radius: 5px;
-    font-weight: 600;
-}
-.menu__links> li:nth-child(4) > a
-{
-    font-weight: 600;
-   
+    gap: 8px;
+    margin-bottom: 8px;
 }
 
-.menu__links> li:nth-child(3) > a
+.menu__testimonios .testimonio__buttom
 {
-    margin-right: 50px;
-   
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid gainsboro;
+    margin-top: 16px;
+    padding: 8px;
+
+    border-radius: 4px;
+}
+.testimonio__buttom  a{
+    color: var(--btn-link-color);
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--main-color2);
+
+}
+footer >div{
+    margin-left: 32px;
+    margin-right:32px;
+    padding: 32px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+}
+.footer__span  { 
+    margin-bottom:16px;
 }
